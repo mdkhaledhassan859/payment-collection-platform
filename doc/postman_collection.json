@@ -1,0 +1,27 @@
+```json id="final3"
+{
+  "info": {
+    "name": "Payment Collection Platform",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Payment",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost/api/bill-payment",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"student_id\":\"2021001\",\"amount\":840}"
+        }
+      }
+    },
+    {
+      "name": "Check Payment Status",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost/api/payment-status/TXN123"
+      }
+    }
+  ]
+}
